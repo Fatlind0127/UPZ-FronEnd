@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../Images/TabLogo.png" type="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per Ne - Detyra 1</title>
+    <link rel="stylesheet" href="css/MyAccount.css">
+    <link rel="stylesheet" href="../css/site-nav.css">
+</head>
+<body>
+
+    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-2">   
+        <nav class="nav"> 
+            <a href="../UsersPage.html"><img src="../Images/UpzLogo.png" alt="" class="logo"></a>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+              <span class="nav-toggle-bar"></span>
+              <span class="nav-toggle-bar"></span>
+              <span class="nav-toggle-bar"></span>
+            </button>
+            <ul class="nav-list">
+                <a href="../UsersPage.html" >Home</a>
+                <a href="PerNe.html">Për Ne</a>
+                <a href="Galeria.html">Galeria</a>
+                <a href="Kontakti.html">Kontakti</a>
+                <div class="user-menu">
+                    <img src="../Images/profile.png" alt=""> <!-- For username display -->
+                    <div class="dropdown-menu">
+                      <span class="username" id="usernameDisplay" style="color:rgb(19, 18, 18); font-weight: 550;"></span> 
+                        <a href="MyAccount.html" id="myAccount">My Account</a>
+                        <a href="#" id="logout">Logout</a> <!-- Logout button -->
+                    </div>
+                </div>
+                
+            </ul>
+        </nav>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <!-- connatin info  -->
+    <div class="container">
+      <h2>My Account</h2>
+  
+      <div class="section">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+  
+      <div class="section">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" placeholder="Enter your surname">
+      </div>
+  
+      <div class="section">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" disabled>
+      </div>
+  
+      <div class="section">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+  
+      <div class="section">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+  
+      <div class="section">
+        <button id="saveChanges">Save Changes</button>
+        <p class="success-message" id="successMessage"></p>
+      </div>
+    </div>
+    <script src="js/MyAccount.js"></script>
+  
+  
+  <!-- contain info end -->
+  
+      <!-- HTML -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../Images/UpzLogo.png" alt="Logo" class="logo-image">
+        <h2 class="site-name">Universiteti <br> "Ukshin Hoti"</h2>
+      </div>
+      <div class="footer-links">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="../UsersPage.html">Home</a></li>
+          <li><a href="PerNe.html">Për Ne</a></li>
+          <li><a href="Galeria.html">Galeria</a></li>
+          <li><a href="Kontakti.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: uprizrenit@uni-pz.com</p>
+        <p>Phone: +383 49 44 55 66</p>
+        <p>Address: Mehmet Hasi, Prizren, KOSOVO</p>
+      </div>
+     
+    </div> 
+    <div class="footer-text">
+        <p>Copyright Universiteti "Ukshin Hoti" © 2024. All rights reserved. Developed By <a href="https://fatlindportfolio.click/">"Fatlind Hamza"</a></p>
+      </div>
+  </footer>
+
+    <script src="js/MyAccount.js"></script>
+    <script src="../js/navbar.js" defer></script>
+</body>
+</html>

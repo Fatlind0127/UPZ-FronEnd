@@ -1,0 +1,185 @@
+* {
+  font-family: "Poppins";
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dde5f4;
+  height: 100vh;
+}
+
+.screen-1 {
+  height: 825px;
+  width: 600px;
+  background: #f1f7fe;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em;
+}
+.screen-1 .logo {
+  margin-top: 0em;
+  margin-left: 9em;
+}
+
+/* New styling for rows of input fields */
+.screen-1 .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Two inputs in one row */
+.screen-1 .input-row {
+  margin-left:20px;
+  display: flex;
+  gap:50px;
+  
+}
+
+/* Align the password input in the center */
+.screen-1 .password-center {
+  display: flex;
+  justify-content: center;
+}
+
+.screen-1 .password {
+  width: 50%; /* Adjust as necessary */
+}
+
+.screen-1 .email, .screen-1 .password {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+}
+
+.screen-1 .email input,
+.screen-1 .password input {
+  outline: none;
+  border: none;
+}
+
+.screen-1 .email input::-moz-placeholder,
+.screen-1 .password input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.screen-1 .email input:-ms-input-placeholder,
+.screen-1 .password input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.screen-1 .email input::placeholder,
+.screen-1 .password input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .email ion-icon,
+.screen-1 .password ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+
+/* Adjust icon positioning */
+.screen-1 .password .show-hide {
+  margin-right: -5em;
+}
+
+.screen-1 .login {
+  padding: 1em;
+  background: rgb(211, 154, 48);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.screen-1 .footer {
+  display: flex;
+  font-size: 0.8em;
+  color: #5e5e5e;
+  gap: 25em;
+  padding-bottom: 10em;
+}
+.screen-1 .footer span {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+@keyframes rotation {
+  0%   { transform: rotate(0deg);}
+  16%  {transform: rotate(180deg);} 
+  50%  {transform: rotate(360deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.logo {
+  filter: blur(0px);
+  animation-name: rotation;
+  animation-duration: 4s;
+}
+
+.logo:hover {
+  filter: blur(1px);
+}
+
+@media (max-width: 700px), (max-height: 900px) {
+  body {
+    overflow-y: auto;
+    align-items: flex-start;
+    padding: 16px 12px;
+    min-height: 100vh;
+    height: auto;
+  }
+  .screen-1 {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 0;
+    padding: 1.25em;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+  .screen-1 .logo {
+    width: min(260px, 72vw) !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+  }
+  .screen-1 .input-row {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 1em;
+    align-items: stretch;
+  }
+  .screen-1 .password-center .password {
+    width: 100%;
+  }
+  .screen-1 .footer {
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 1.25em;
+  }
+}
+
